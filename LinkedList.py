@@ -3,7 +3,7 @@ class Node:
         self.val=val
         self.next=next
 
-class list:
+class mlist:
     def __init__(self):
         self.head=None
     def InsertFirst(self,val):
@@ -58,44 +58,44 @@ class list:
 if __name__=="__main__":
     try:
         print("Mode:\nInsertEnd\nInsertBegining\nInsertMiddle\nDeleteEnd\nDeleteBeg\nDeleteATPos\nDisplay\nStop\n")
-        newList=list()
+        newmlist=mlist()
         while True:
             mode=input("Enter Mode")
             if mode=='Stop':
                 print("Bye Bye")
                 break
             elif mode=='Display':
-                newList.Display()
+                newmlist.Display()
             elif mode=='InsertEnd':
-                if newList.head==None:
-                    newList.InsertFirst(val=input("Enter value to insert.\n"))
+                if newmlist.head==None:
+                    newmlist.InsertFirst(val=input("Enter value to insert.\n"))
                     continue
-                newList.InsertEnd(val=input("Enter value to insert.\n"))
+                newmlist.InsertEnd(val=input("Enter value to insert.\n"))
             elif mode=='InsertBegining':
-                if newList.head==None:
-                    newList.InsertFirst(val=input("Enter value to insert.\n"))
+                if newmlist.head==None:
+                    newmlist.InsertFirst(val=input("Enter value to insert.\n"))
                     continue
-                newList.InsertBegining(val=input("Enter value to insert.\n"))
+                newmlist.InsertBegining(val=input("Enter value to insert.\n"))
             elif mode=='InsertMiddle':
-                if newList.head==None:
-                    newList.InsertFirst(val=input("Enter value to insert.\n"))
+                if newmlist.head==None:
+                    newmlist.InsertFirst(val=input("Enter value to insert.\n"))
                     continue
-                newList.InsertMiddle(val=input("Enter value to insert.\n"),pos=input("Enter Position.\n"))
+                newmlist.InsertMiddle(val=input("Enter value to insert.\n"),pos=input("Enter Position.\n"))
             elif mode=='DeleteEnd':
-                if newList.head==None:
-                    newList.InsertFirst(val=input("Enter value to insert.\n"))
+                if newmlist.head==None:
+                    newmlist.InsertFirst(val=input("Enter value to insert.\n"))
                     continue
-                newList.DeleteEnd()
+                newmlist.DeleteEnd()
             elif mode=='DeleteBeg':
-                if newList.head==None:
-                    newList.InsertFirst(val=input("Enter value to insert.\n"))
+                if newmlist.head==None:
+                    newmlist.InsertFirst(val=input("Enter value to insert.\n"))
                     continue
-                newList.DeleteBeg()
+                newmlist.DeleteBeg()
             elif mode=='DeleteATPos':
-                if newList.head==None:
-                    newList.InsertFirst(val=input("Enter value to insert.\n"))
+                if newmlist.head==None:
+                    newmlist.InsertFirst(val=input("Enter value to insert.\n"))
                     continue
-                newList.DeleteATPos(pos=input("Enter Position"))
+                newmlist.DeleteATPos(pos=input("Enter Position"))
             else:
                 print("Wrong Mode")
     except Exception as e:
