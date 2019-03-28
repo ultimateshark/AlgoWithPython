@@ -6,7 +6,7 @@ class Stack:
 		if self.ls.head==None:
 			self.ls.InsertFirst(val=value)
 		else:
-			self.ls.InsertEnd(val=value)
+			self.ls.InsertBegining(val=value)
 	def Pop(self):
 		if self.ls.head==None:
 			print("Stack Empty")
