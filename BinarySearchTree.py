@@ -26,7 +26,7 @@ class BinarySearchTree:
 				self.left.Insert(key)
 
 	def __str__(self):
-		return self.Inorder()
+		return self.key
 
 	def Inorder(self):
 		if self.key==None:
