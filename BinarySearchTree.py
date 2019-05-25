@@ -119,11 +119,6 @@ class BinarySearchTree:
 
 if __name__ == '__main__':
 	tr=BinarySearchTree()
-	tr.Insert(32)
-	tr.Insert(2)
-	tr.Insert(16)
-	tr.Insert(33)
-	tr.Insert(75)
 	print("To Insert Press 1\nFor Inorder Press 2\nFor Preorder Press 3\nFor Postorder Press 4\nFor Search Press 5\nTo Delete Press 6\nTo Quit Press 9\n")
 	while True:
 		mode=int(input("Enter Mode\n"))
