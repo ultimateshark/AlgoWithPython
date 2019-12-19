@@ -42,17 +42,17 @@ class BinarySearchTree:
 			return
 		print(self.key)
 		if self.left!=None:
-			self.left.Inorder()
+			self.left.Preorder()
 		if self.right!=None:
-			self.right.Inorder()
+			self.right.Preorder()
 
 	def Postorder(self):
 		if self.key==None:
 			return
 		if self.left!=None:
-			self.left.Inorder()
+			self.left.Postorder()
 		if self.right!=None:
-			self.right.Inorder()
+			self.right.Postorder()
 		print(self.key)
 
 	def Calheight(self):
